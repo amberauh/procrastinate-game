@@ -1,3 +1,7 @@
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 <style>
   body {
     display: flex;
@@ -35,6 +39,28 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  
+  .pixelify-font {
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 7px;
+  }
+  
+  .side-bar-font {
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 7px;
+  }
+  
+  .stats-bar {
+    
   }
   
   .attribute {
@@ -140,11 +166,15 @@
   </div>
   <div id="sidebar">
     <div id="stats">
-      <p>
-        stats: im dying rn help
+      <p class="side-bar-font">
+        Your Stats
       </p>
       <div id="stats-block">
-         
+        <p class="pixelify-font">
+          Academics
+        </p> 
+        <div class="stats-bar">
+        </div>
       </div>
     </div>
     <div id="tasks-container">
@@ -183,3 +213,4 @@
     </div>
   </div>
 </body>
+</head>

@@ -1,0 +1,185 @@
+<style>
+  body {
+    display: flex;
+    border-style: solid;
+    font-size: 24px;
+  }
+  
+  #main {
+    width: 60vw;
+    height: 90vh;
+    border-style: solid;
+    overflow: hidden;
+  }
+
+  #sidebar {
+    width: 40vw;
+    height: 90vh;
+    display: block;
+  }
+  
+  #stats {
+    height: 30vh;
+    border-style: solid;
+    position: relative;
+  }
+  
+  #stats-block {
+    height: 20vh;
+    width: 35vw;
+    border-style: solid;
+    border-color: #EBE8D4;
+    border-radius: 15px;
+    background-color: #FDF7DD;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .attribute {
+    
+  }
+  
+  #tasks-container {
+    height: 60vh;
+    border-style: solid;
+    overflow-y: auto;
+  }
+  
+  .task-block 
+  {
+    margin: 2vh;
+    padding: 2vh;
+    border-radius: 10px;
+    height: 10vh;
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);   
+  }
+  .task-block h2
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .task-block p
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6em;
+  }
+  
+  #header {
+    display: flex;
+    border-style: solid;
+    height: 15vh;
+  }
+  
+  #time {
+    border-style: solid;
+    width: 60vw;
+    font-size: 36px
+  }
+  
+  #play-button {
+    border-style: solid;
+    width: 40vw;
+    font-size: 36px;
+  }
+  
+  #calendar {
+    
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-y: scroll;
+  }
+  
+  .time-block {
+    height: 16vh;
+    width: 100%;
+    border-bottom: 1px dashed grey;
+    background-color: white;
+    
+  }
+  
+  .time-section {
+    
+  }
+  
+  .task-calendar {
+    
+  }
+</style>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="time">
+        <p>February 11, 2025</p>
+      </div>
+      <div id="play-button">
+      <p>Play button goes here</p>
+      </div>
+    </div>
+    <div id="calendar">
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+      <div class="time-block"></div>
+    </div>
+  </div>
+  <div id="sidebar">
+    <div id="stats">
+      <p>
+        stats: im dying rn help
+      </p>
+      <div id="stats-block">
+         
+      </div>
+    </div>
+    <div id="tasks-container">
+      
+      <div id="tasks-list">
+        
+        <div class="task-block" id="task1">
+          <h2>Write Essay</h2>
+          <p>info about this specific task</p>
+        </div>
+        <div class="task-block" id="task2">
+          <h2>Eat Food</h2>
+          <p>yum</p>
+        </div>
+        <div class="task-block" id="task3">
+          <h2>Sleep</h2>
+          <p>zzz</p>
+        </div>
+         <div class="task-block" id="task4">
+          <h2>Another Task</h2>
+          <p>info</p>
+        </div>
+         <div class="task-block" id="task5">
+          <h2>Another Task</h2>
+          <p>info</p>
+        </div>
+         <div class="task-block" id="task6">
+          <h2>Another Task</h2>
+          <p>info</p>
+        </div>
+
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</body>

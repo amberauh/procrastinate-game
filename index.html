@@ -58,29 +58,51 @@
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
-    margin-top: 5px;
+/*     margin-top: 5px; */
+    margin-top: 1%;
   }
   
-  #academics {
-    margin-left: 13px;
+  .div-academics {
+    width: 32vw;
+    height: 5vh;
+/*     border-style: solid; */
+    position: relative;
+    top: 2%;
+    left: 5%;
   }
   
-  #social-life {
-    margin-left: 13px;
+  .div-social-life {
+    width: 32vw;
+    height: 5vh;
+/*     border-style: solid; */
+    position: relative;
+    top: 1%;
+    left: 5%;
   }
   
-  #energy {
-    margin-left: 13px;
+  .div-energy {
+    width: 32vw;
+    height: 5vh;
+/*     border-style: solid; */
+    position: relative;
+    top: 0;
+    left: 5%;
   }
   
-  #mental-health {
-    margin-left: 13px;
+  .div-mental-health {
+    width: 32vw;
+    height: 5vh;
+/*     border-style: solid; */
+    position: relative;
+    top: 0;
+    left: 5%;
   }
   
   .stats-bar {
     height: 2vh;
     width: 25vw;
     border-style: solid;
+    border-color: #EBE8D4;
     border-radius: 5px;
   }
   
@@ -94,26 +116,34 @@
   
   #sb-academics{
     position: absolute;
-    top: 14%;
-    left: 4.5%;
+    bottom: 0;
   }
   
   #sb-social-life{
     position: absolute;
-    top: 38%;
-    left: 4.5%;
+    bottom: 0;
   }
   
   #sb-energy{
     position: absolute;
-    top: 62%;
-    left: 4.5%
+    bottom: 0;
   }
   
   #sb-mental-health{
     position: absolute;
-    top: 86%;
-    left: 4.5%;
+    bottom: 0;
+  }
+  
+  .stats-score {
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    position: absolute;
+    top: 80%;
+    right: 0;
+    transform: translateY(-50%);
   }
   
   .attribute {
@@ -222,30 +252,50 @@
       <p class="side-bar-header">
         Your Stats
       </p>
+      
       <div id="stats-block">
-        <p class="side-bar-subheading" id="academics">
+        <div class="div-academics">
+          <p class="side-bar-subheading">
           Academics
+          </p> 
           <div class="stats-bar" id="sb-academics"></div>
-        <div class="stats-bar-fill", id="sb-academics"></div>
-        </p> 
-        <p class="side-bar-subheading" id="social-life">
+          <div class="stats-bar-fill", id="sb-academics"></div>
+          <div class="stats-score">
+            9/100
+          </div>
+        </div>
+        <div class="div-social-life">
+          <p class="side-bar-subheading">
           Social Life
+          </p>
           <div class="stats-bar" id="sb-social-life"></div>
           <div class="stats-bar-fill" id="sb-social-life"></div>
-        </p>
-        <p class="side-bar-subheading" id="energy">
+          <div class="stats-score">
+            9/100
+          </div>
+        </div>
+        <div class="div-energy">
+          <p class="side-bar-subheading">
           Energy
+          </p>
           <div class="stats-bar" id="sb-energy"></div>
           <div class="stats-bar-fill" id="sb-energy"></div>
-        </p>
-        <p class="side-bar-subheading" id="mental-health">
+          <div class="stats-score">
+            9/100
+          </div>
+        </div>
+        <div class="div-mental-health">
+          <p class="side-bar-subheading">
           Mental Health
+          </p>
           <div class="stats-bar" id="sb-mental-health"></div>
           <div class="stats-bar-fill" id="sb-mental-health"></div>
-        </p>
-
-        
+          <div class="stats-score">
+            9/100
+          </div>
+        </div>
       </div>
+
     </div>
     <div id="tasks-container">
       

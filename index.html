@@ -29,7 +29,7 @@
   }
   
   #stats-block {
-    height: 20vh;
+    height: 23vh;
     width: 35vw;
     border-style: solid;
     border-color: #EBE8D4;
@@ -38,29 +38,82 @@
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
   }
   
-  .pixelify-font {
+
+  .side-bar-header {
     font-family: "Pixelify Sans", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 7px;
+    margin-top: 8px;
   }
   
-  .side-bar-font {
+  .side-bar-subheading{
     font-family: "Pixelify Sans", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 25px;
-    margin-left: 7px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  #academics {
+    margin-left: 13px;
+  }
+  
+  #social-life {
+    margin-left: 13px;
+  }
+  
+  #energy {
+    margin-left: 13px;
+  }
+  
+  #mental-health {
+    margin-left: 13px;
   }
   
   .stats-bar {
-    
+    height: 2vh;
+    width: 25vw;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  
+  .stats-bar-fill {
+    height: 2vh;
+    width: 5vw; /*connect functionality */
+    border-style: solid;
+    border-radius: 5px;
+    background-color: red;
+  }
+  
+  #sb-academics{
+    position: absolute;
+    top: 14%;
+    left: 4.5%;
+  }
+  
+  #sb-social-life{
+    position: absolute;
+    top: 38%;
+    left: 4.5%;
+  }
+  
+  #sb-energy{
+    position: absolute;
+    top: 62%;
+    left: 4.5%
+  }
+  
+  #sb-mental-health{
+    position: absolute;
+    top: 86%;
+    left: 4.5%;
   }
   
   .attribute {
@@ -166,15 +219,32 @@
   </div>
   <div id="sidebar">
     <div id="stats">
-      <p class="side-bar-font">
+      <p class="side-bar-header">
         Your Stats
       </p>
       <div id="stats-block">
-        <p class="pixelify-font">
+        <p class="side-bar-subheading" id="academics">
           Academics
+          <div class="stats-bar" id="sb-academics"></div>
+        <div class="stats-bar-fill", id="sb-academics"></div>
         </p> 
-        <div class="stats-bar">
-        </div>
+        <p class="side-bar-subheading" id="social-life">
+          Social Life
+          <div class="stats-bar" id="sb-social-life"></div>
+          <div class="stats-bar-fill" id="sb-social-life"></div>
+        </p>
+        <p class="side-bar-subheading" id="energy">
+          Energy
+          <div class="stats-bar" id="sb-energy"></div>
+          <div class="stats-bar-fill" id="sb-energy"></div>
+        </p>
+        <p class="side-bar-subheading" id="mental-health">
+          Mental Health
+          <div class="stats-bar" id="sb-mental-health"></div>
+          <div class="stats-bar-fill" id="sb-mental-health"></div>
+        </p>
+
+        
       </div>
     </div>
     <div id="tasks-container">
